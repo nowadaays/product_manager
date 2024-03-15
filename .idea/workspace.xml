@@ -5,20 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58e63135-1cc1-4cbf-80dc-f6fe4b9beceb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/FlywayConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/entity/ProductCategory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/entity/ProductDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/ProductCategoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/ProductDetailsRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/ProductCategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/ProductDetailsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V1__create_product_category_table.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V2__create_product_details_table.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/CategoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dto/ProductDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dto/ProductDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entity/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entity/Category.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entity/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repository/CategoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/CategoryRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/ProductRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/CategoryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/ProductService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,7 +57,9 @@
   &quot;associatedIndex&quot;: 5
 }</component>
   <component name="ProjectId" id="2bBK5EhDyf34RE2qVf2uLs2fRiT" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -73,12 +74,12 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/pshen/Downloads/eshop",
+    "last_opened_file_path": "C:/Users/pshen/Downloads/product_manager",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.SQL",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -119,6 +120,11 @@
       <workItem from="1706536432394" duration="2225000" />
       <workItem from="1706539286167" duration="75000" />
       <workItem from="1706585371357" duration="2873000" />
+      <workItem from="1706601048307" duration="329000" />
+      <workItem from="1706739292573" duration="67000" />
+      <workItem from="1710502926853" duration="261000" />
+      <workItem from="1710503272289" duration="4516000" />
+      <workItem from="1710507817558" duration="20000" />
     </task>
     <servers />
   </component>
