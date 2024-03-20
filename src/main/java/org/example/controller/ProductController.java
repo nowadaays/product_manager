@@ -3,7 +3,9 @@ package org.example.controller;
 import lombok.AllArgsConstructor;
 import org.example.dto.ProductDTO;
 import org.example.entity.Product;
+import org.example.service.ProductNotificationService;
 import org.example.service.ProductService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -16,10 +18,13 @@ import java.util.List;
 public class ProductController {
 
     private final ProductService productService;
+    private final ProductNotificationService productNotificationService;
 
     @PostMapping
     public ResponseEntity<Product> create(@RequestBody ProductDTO dto){
-        return mappingResponseProduct(productService.create(dto));
+        Product product = productService.create(dto);
+        productNotificationService.sendProductCreated(product);
+        return mappingResponseProduct(product);
     }
 
     @GetMapping
@@ -34,7 +39,9 @@ public class ProductController {
 
     @PutMapping
     public ResponseEntity<Product> update(@RequestBody Product product){
-        return mappingResponseProduct(productService.update(product));
+        Product updatedProduct = productService.update(product);
+        productNotificationService.sendProductUpdate(updatedProduct);
+        return mappingResponseProduct(updatedProduct);
     }
 
     @DeleteMapping("/{id}")
